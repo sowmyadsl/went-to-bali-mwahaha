@@ -5,7 +5,7 @@
     <div id="order_item<%= item.id %>">
 
       <p>
-        <%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:method => "delete"}, remote: true %>
+        <%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => { :method => "delete"}, remote: true %>
       </p>
       <p>
         Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Subtotal: <%= number_to_currency (item.product.price * item.quantity) %>

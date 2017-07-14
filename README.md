@@ -7,6 +7,10 @@ By Sowmya Dinavahi
 ## Description
 This is an E-commerce site is made for "Users"(customer) and "Admin" (store manager)It includes `bcrypt` and `materialize`.
 
+Refactored the following changes:
+
+* 
+
 Users can :
 * Create an account
 * Login/Logout from account.

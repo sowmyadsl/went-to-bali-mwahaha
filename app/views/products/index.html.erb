@@ -1,19 +1,15 @@
 <br>
-<div class="card-panel">
-  <div class="panel-body"><% if current_user %>
-  <div class= "col-md-12">
-    <h4>Welcome <%=current_user.email %>! </h4>
+
+  <br>
+  <% if current_user.try(:admin?) %>
+  <div class="row">
+    <div class= "col-md-12">
+    <p>Hello Admin,</p>
+    <p>Add a new product: </p>
+      <button><%= link_to "New Product", new_product_path %></button>
+    </div>
   </div>
   <% end %>
-  <br><% if current_user.try(:admin?) %>
-  <div class= "col-md-12">
-  <p>Hello Admin,</p>
-  <p>Add a new product: </p>
-    <button><%= link_to "New Product", new_product_path %></button>
-  </div>
-  <% end %></div>
-</div>
-
 
 <h3>Products</h3>
 
@@ -21,12 +17,10 @@
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4">
-      <h4><%= product.name %></h4>
-      <p><%= product.description %></p>
-      <p><%= number_to_currency product.price %></p>
-      <%= form_for @order_item, method: :post,remote: true do |f| %>
+      <h5><%= product.name %></h5> | <p><%= number_to_currency product.price %></p>
+      <%= form_for @order_item , remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
-        <%= f.number_field :quantity, value: 1 %>
+        <%= f.number_field :quantity %>
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
       <% end %>
     </div>
