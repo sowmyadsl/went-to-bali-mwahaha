@@ -14,7 +14,7 @@ class Seed
 end
 
 admin_list = [
-  "Admin", "admin@admin.com", "password"],
+  ["Admin", "admin@admin.com", "password"],
 ]
 
 admin_list.each do |name, email, password|
