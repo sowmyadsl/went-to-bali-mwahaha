@@ -9,6 +9,10 @@ This is an E-commerce site is made for "Users"(customer) and "Admin" (store mana
 
 Refactored the following changes:
 
+* Updated the gemfiles.
+* Add admin and user functionality.
+* Add AJAX for adding a product to cart.
+* Add AJAX to delete a product.
 * 
 
 Users can :
