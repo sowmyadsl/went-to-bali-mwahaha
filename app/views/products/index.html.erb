@@ -1,12 +1,21 @@
+<% if current_user.try(:admin?) %>
+  <div class="card-panel teal">
+    <span class="white-text">
+      <p>Hello Admin,</p>
+      <p>Add a new service: </p>
+        <button><%= link_to "New Product", new_product_path %></button>
+    </span>
+  </div>
+<% end %>
+
+
 <h3>Products</h3>
 
 <div class="row">
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4">
-
       <h4><%= link_to product.name, product_path(product), remote: true %></h4>
-
 
       <% if current_user.try(:admin?) %>
         <%= link_to "Edit", edit_product_path(product)%> |
