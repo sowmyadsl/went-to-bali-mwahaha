@@ -1,4 +1,4 @@
-$('#cart-items-number').html("Cart | Total items: <%= @order.order_items.count %>");
+$('#cart-items-number').html("Cart | Total items: <%=@order.order_items.sum(&:quantity)%>");
 
 
 // $("input#order_item_quantity").each(function( index ) {

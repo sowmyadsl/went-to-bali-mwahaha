@@ -15,11 +15,14 @@ class ProductsController < ApplicationController
   end
 
   def new
+    @product = Product.find(params[:id])
     @product = Product.new
   end
 
   def create
+    @product = Product.find(params[:id])
     @product = Product.new(product_params)
+    flash[:notice] = "Product successfully added!"
     if @product.save
       redirect_to '/'
     else

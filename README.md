@@ -7,13 +7,26 @@ By Sowmya Dinavahi
 ## Description
 This is an E-commerce site is made for "Users"(customer) and "Admin" (store manager)It includes `bcrypt` and `materialize`.
 
-Refactored the following changes:
+### Refactored the following changes:
 
-* Updated the gemfiles.
-* Add admin and user functionality.
-* Add AJAX for adding a product to cart.
-* Add AJAX to delete a product.
-* 
+- [x] Updated Gem files
+- [x] Removed text on the quantity
+- [x] Add Edit and Update functionality for products
+- [x] Add AJAX for adding a product in cart
+- [ ] Ensure that users can't order a negative number of items
+- [ ] Add flash messages for signing up, signing in and signing out.
+- [x] Add Paperclip for product image upload.
+- [x] Add product validations.
+- [ ] Add admin flash messages for adding, updating and deleting products.
+- [ ] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
+- [ ] Add Stripe so users can pay when finalizing orders.
+- [ ] Add password validations to ensure a user's password is sufficiently complex.
+- [ ] Add admin links to navbar so admins can easily add, update and delete products.
+
+- [ ] Fix the row height for products, which can quickly become uneven.
+- [ ] Add integration testing for AJAX functionality.
+- [ ] Add integration testing for AJAX functionality.
+- [ ] Add further AJAX functionality where it might be useful.
 
 Users can :
 * Create an account

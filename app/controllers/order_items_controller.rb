@@ -6,7 +6,7 @@ class OrderItemsController < ApplicationController
     @order.save
     session[:order_id] = @order.id
     respond_to do |format|
-      format.html { redirect_to cart_path }
+      format.html {redirect_to products_path }
       format.js
     end
   end
@@ -25,7 +25,7 @@ class OrderItemsController < ApplicationController
     @order.save
     redirect_to cart_path
     respond_to do |format|
-      format.html { redirect_to cart_path }
+      format.html {redirect_to cart_path }
       format.js
     end
   end
@@ -33,6 +33,6 @@ class OrderItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:order_item).permit(:quantity, :product_id)
+    params.require(:order_item).permit(:quantity, :product_id, :order_id)
   end
 end
