@@ -1,12 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/spec/models/product_spec.rb": [
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/spec/models/order_items_spec.rb": [
         1,
         null,
         1,
         2,
         2,
+        null,
         2,
         2,
         null
@@ -307,6 +308,60 @@
         null,
         null
       ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/order_item.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/spec/models/order_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/order.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/product.rb": [
         1,
         1,
@@ -318,12 +373,35 @@
         null,
         null
       ],
-      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/application_record.rb": [
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        2,
+        null
+      ],
+      "/Users/sowmyaudai/projects/went-to-bali-mwahaha/app/models/user.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ]
     },
-    "timestamp": 1500187936
+    "timestamp": 1500222122
   }
 }

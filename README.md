@@ -12,17 +12,19 @@ This is an E-commerce site is made for "Users"(customer) and "Admin" (store mana
 - [x] Updated Gem files
 - [x] Removed text on the quantity
 - [x] Add Edit and Update functionality for products
-- [x] Add AJAX for adding a product in cart
-- [ ] Ensure that users can't order a negative number of items
-- [ ] Add flash messages for signing up, signing in and signing out.
+- [x] Users can add products to their shopping cart from the index page using AJAX.
+- [x] Users can click on a product and show/hide the product detail using AJAX.
+- [x] Users can remove items from the shopping cart without a page reload.
+- [x] Satisfy Unit Testing for all models.
+- [x] Ensure that users can't order a negative number of items
+- [x] Add flash messages for signing up, signing in and signing out.
 - [x] Add Paperclip for product image upload.
 - [x] Add product validations.
-- [ ] Add admin flash messages for adding, updating and deleting products.
+- [x] Add admin flash messages for adding, updating and deleting products.
 - [ ] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 - [ ] Add Stripe so users can pay when finalizing orders.
 - [ ] Add password validations to ensure a user's password is sufficiently complex.
 - [ ] Add admin links to navbar so admins can easily add, update and delete products.
-
 - [ ] Fix the row height for products, which can quickly become uneven.
 - [ ] Add integration testing for AJAX functionality.
 - [ ] Add integration testing for AJAX functionality.
@@ -33,7 +35,7 @@ Users can :
 * Login/Logout from account.
 * View all products in the page.
 * Add items to shopping cart.
-* Visit the shopping cart page and purchase the products from the cart using Stripe.
+* Visit the shopping cart page and finalize the order.
 
 Admins can :
 * Note: There is one admin seeded in the database. An admin can only be added by seeding the database to prevent any user from accessing admin functionality. To access the admin account, login using:
