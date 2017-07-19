@@ -3,7 +3,7 @@ class OrderItemsController < ApplicationController
   def create
     @order = current_order
     @item = @order.order_items.new(item_params)
-    @order.save
+    @order.save!
     session[:order_id] = @order.id
     respond_to do |format|
       format.html {redirect_to products_path }
